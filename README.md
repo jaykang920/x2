@@ -22,3 +22,8 @@ Follows the currently available ports of x2.
 
 * [x2clr](https://github.com/jaykang920/x2clr) : CLR (.NET/Mono) port of x2,
   written in C#
+
+Follows the early-stage ports under development.
+
+* [x2boost](https://github.com/jaykang920/x2boost) : Cross-platform C++ port of x2,
+based on [Boost](http://www.boost.org) libraries
