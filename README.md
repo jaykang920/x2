@@ -21,7 +21,7 @@ x2[source file extension]: e.g., x2java, x2py, x2rb, etc.
 Follows the currently available ports of x2.
 
 * [x2clr](https://github.com/jaykang920/x2clr) : CLR (.NET/Mono) port of x2,
-  written in C#
+  written in C# (**reference port**)
 
 Early-stage ports under development:
 
