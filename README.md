@@ -17,7 +17,7 @@ embodiment in order to make use of it. A _port_ is an actual implementation of x
 targeting a specific platform or language. A port is usually named in the form of
 x2[target], where target signifies its platform or langauge. Especially when a
 port is targeting a single programming language, it is normally named as
-x2[source file extension]: e.g., x2java, x2py, x2rb, etc.
+x2[source file extension]: e.g., x2py, x2rb, etc.
 
 Follows the currently available ports of x2.
 
