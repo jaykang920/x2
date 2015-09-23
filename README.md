@@ -12,6 +12,8 @@ loosely coupled event-driven approach throughout any scale of application.
 Ports
 -----
 
+[![Join the chat at https://gitter.im/jaykang920/x2](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/jaykang920/x2?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 Since x2 itself is not a single framework or library, we need its specific
 embodiment in order to make use of it. A _port_ is an actual implementation of x2,
 targeting a specific platform or language. A port is usually named in the form of
