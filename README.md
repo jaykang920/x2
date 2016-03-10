@@ -8,10 +8,10 @@ systems. Based on a few old simple yet powerful constructs, it encourages a
 unified loosely coupled event-driven approach throughout any scale of application.
 
 In a nutshell, x2 is all about how you organize your distributed application.
-Although x2 also specifies its proprietary wire format and most ports come with
-their default protocol code generators, x2 is differentiated from common protocol
-code generators (such as Google ProtoBuf or Apache Thrift) in that it provides
-a macroscopic processing model to flexibly organize your event-based distributed
+Although x2 also specifies its own proprietary wire format and most ports come
+with their default protocol code generators, x2 is differentiated from common
+protocol code generators (such as Google ProtoBuf or Apache Thrift) in that it
+provides a macroscopic model to flexibly organize your event-based distributed
 system.
 
 Ports
