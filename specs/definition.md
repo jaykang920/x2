@@ -38,9 +38,10 @@ A **consts** element may contain one or more of the following child elements.
 
 Defines a constant value.
 
-| Attribute       | Description          |
-|-----------------|----------------------|
-| name (required) | Name of the constant |
+| Attribute        | Description           |
+|------------------|-----------------------|
+| name (required)  | Name of the constant  |
+| value (required) | Value of the constant |
 
 ### cell
 
@@ -57,10 +58,11 @@ A **cell** element may contain one or more of the following child elements.
 
 Defines a cell property.
 
-| Attribute       | Description               |
-|-----------------|---------------------------|
-| name (required) | Name of the property      |
-| type (required) | Data type of the property |
+| Attribute                | Description                                |
+|--------------------------|--------------------------------------------|
+| name (required)          | Name of the property                       |
+| type (required)          | Data type of the property                  |
+| default value (optional) | Default value of the property, if required | 
 
 A property element may have a specified default value.
 
