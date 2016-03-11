@@ -111,7 +111,10 @@ types.
 Definition Format
 -----------------
 
-Instead of introducing an IDL (Interface Definition Language)
+Instead of introducing another IDL(Interface Definition Language), x2 adopts
+existing text file formats for definitions. Though YAML is definitely less
+verbose, XML is our first choice since it is supported out-of-box in most modern
+languages.
 
 ### XML Definition Format
 
