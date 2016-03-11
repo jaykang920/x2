@@ -22,6 +22,11 @@ The conceptual constructs of x2 are defined in [concepts.md](concepts.md).
 Specifications
 --------------
 
+The following documents provides the specifications that x2 ports should confirm:
+
+* [definition.md](specs/definition.md) : x2 definition specifications
+* [binary-format.md](specs/binary-format.md) : x2 proprietary binary format specifications
+
 Ports
 -----
 
