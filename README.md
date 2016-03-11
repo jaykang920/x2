@@ -30,7 +30,7 @@ The following documents provides the specifications that x2 ports should confirm
 Ports
 -----
 
-Since x2 itself is not a single framework or library, we need its specific
+Since x2 itself is not a concrete framework or library, we need its specific
 embodiment in order to make use of it. A _port_ is an actual implementation of x2,
 targeting a specific platform or language. A port is usually named in the form of
 x2[target], where target signifies its platform or langauge. Especially when a
