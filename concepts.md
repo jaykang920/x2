@@ -106,6 +106,6 @@ holding flow.
 In some complicated applications, a lot of flows may be attached to a single
 hub. When it is clear that some of the events are meaningful to only a limited
 set of flows, blindly distributing those events through all the attached flows
-is definitely not desirable. Ports may introduce hub channels to handle this
+is definitely not desirable. Ports may introduce *hub channel* to handle this
 case. If a posted event is assigned to a specific channel, only the flows that
-is explicitly subscribing to that channel would be notified with it.
+are explicitly subscribing to that channel would be notified with it.
