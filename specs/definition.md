@@ -4,8 +4,9 @@ Definition Specification
 Definition Unit
 ---------------
 
-The x2 definition of an application domain is x-piled by each unit, which is
-normally a single text file. An x2 definition unit has the following attributes.
+The x2 definition of an application domain is x-piled (trans-piled or
+cross-piled) by each unit, which is normally a single text file. An x2
+definition unit has the following attributes.
 
 ### namespace
 
@@ -114,8 +115,8 @@ Definition Format
 -----------------
 
 Instead of introducing another IDL(Interface Definition Language), x2 adopts
-existing text file formats for definitions. Though YAML is definitely less
-verbose, XML is our first choice since it is supported out-of-box in most modern
+existing text formats for definitions. Though YAML is definitely less verbose,
+XML is our first choice since it is supported out-of-box in most modern
 languages.
 
 ### XML Definition Format
