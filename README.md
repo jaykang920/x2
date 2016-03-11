@@ -1,18 +1,26 @@
 x2
 ==
 
-x2 is a set of concepts and specifications (see
-[x2wiki](https://github.com/jaykang920/x2/wiki) for details) that facilitates
-the development of highly flexible cross-platform, cross-language distributed
-systems. Based on a few old simple yet powerful constructs, it encourages a
-unified loosely coupled event-driven approach throughout any scale of application.
+x2 is a set of concepts and specifications that facilitates the development of
+highly flexible cross-platform, cross-language distributed systems. Based on a
+few old simple yet powerful constructs, it encourages a unified loosely coupled
+event-driven approach throughout an application of any scale.
 
-In a nutshell, x2 is all about how you organize your distributed application.
-Although x2 also specifies its own proprietary wire format and most ports come
+*In a nutshell, x2 is all about how you organize your distributed application.*
+
+Although x2 also specifies its own proprietary binary format and most ports come
 with their default protocol code generators, x2 is differentiated from common
 protocol code generators (such as Google ProtoBuf or Apache Thrift) in that it
 provides a macroscopic model to flexibly organize your event-based distributed
 system.
+
+Concepts
+--------
+
+The conceptual constructs of x2 are defined in [concepts.md](concepts.md).
+
+Specifications
+--------------
 
 Ports
 -----
