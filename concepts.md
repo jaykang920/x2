@@ -62,7 +62,7 @@ embedded into existing applications.
 
 A *hub* is an event distribution bus to which flows are attached. In most cases,
 an x2 process maintains only one single hub with it. Once an event is *posted*
-up to a hub, every attached flow is notified with it.
+up to the hub, every attached flow is notified with it.
 
 While a flow usually performs precise dispatching, a hub performs blind
 distribution, meaning that a posted event is pushed into all the attached flows
