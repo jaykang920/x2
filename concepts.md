@@ -20,19 +20,41 @@ part of the entire application.
 
 #### Cell
 
-A *cell* is a predefined common data structure shared among x2 processes that
-serves a single application domain. As a composite data record, a cell contains
-one or more *properties* whose data types may be either primitive or composite
-(another cell).
+A *cell* is a language-neutrally predefined common data structure shared among
+x2 processes that serves a single application domain. As a composite data
+record, a cell contains one or more *properties* whose data types may be either
+primitive or composite (another cell).
+
+Follows the characteristics of x2 cells:
+
+##### Cell Characteristics
+
+###### Hierarchical
+
+x2 cells may be organized in hierarchical structure, which is usually expressed
+as class inheritance hierarchy in object-oriented languages. You can extract
+properties repeated across many cells into a common parent cell and let the
+child cells extend it.
+
+###### Self-descriptive
+
+An x2 cell is expected to describe itself (name-value pairs of properties) with
+a simple toString-like call.
+
+###### Fingerprinted
+
+Every cell instance has its own fingerprint that reflects its property
+assignment status.
 
 #### Event
 
 An *event* is just a special kind of cell that can travel across different
 flows. In order for a remote recipient to identify the events it receives,
 events carry their own type identifiers unique within a single application
-domain.
+domain. Basically being a cell, an event may contain another cells, thus another
+events.
 
-Basically being a cell, an event may contain another cells, thus another events.
+Exchanging events should be the only way that cases/flows communicate each other.
 
 #### Fingerprint
 
