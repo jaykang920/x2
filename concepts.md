@@ -25,8 +25,6 @@ x2 processes that serves a single application domain. As a composite data
 record, a cell contains one or more *properties* whose data types may be either
 primitive or composite (another cell).
 
-Follows the characteristics of x2 cells:
-
 ##### Cell Characteristics
 
 ###### Hierarchical
