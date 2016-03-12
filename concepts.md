@@ -18,6 +18,11 @@ The shared knowledge of an application, defined in definition files, is
 *x-piled* (trans-piled or cross-piled) into corresponding source files to form a
 part of the entire application.
 
+#### Constant
+
+Named constant values may be shared through x2 definitions. Usually x2 event
+type identifiers are defined as shared integer constants.
+
 #### Cell
 
 A *cell* is a language-neutrally predefined common data structure shared among
@@ -37,7 +42,7 @@ child cells extend it.
 ###### Self-descriptive
 
 An x2 cell is expected to describe itself (name-value pairs of properties) with
-a simple toString-like call.
+a simple toString-like call. This minimizes the need for manual string formatting.
 
 ###### Fingerprinted
 
@@ -101,13 +106,6 @@ x2.
 
 More Concepts
 -------------
-
-### Shared Knowledge
-
-#### Constant
-
-Shared constants may be defined in x2 definition files. Usually x2 event type
-identifiers are defined as shared integer constants.
 
 ### Structural Components
 
