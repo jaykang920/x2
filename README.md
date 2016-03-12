@@ -34,9 +34,9 @@ The following documents provides the specifications that x2 ports should confirm
 * [definition.md](specs/definition.md) : x2 definition specifications
 * [binary-format.md](specs/binary-format.md) : x2 binary format specifications
 
-x2 binary format is focused to reduce the payload size. It supports backwards-
-compatibility if adding or removing properties happens only at the end of cells/
-events preserving the order of the rest.
+x2 binary format is focused to reduce the payload size. It supports
+backwards-compatibility if adding or removing properties happens only at the end
+of cells/events preserving the order of the rest.
 
 Though Behind
 -------------
