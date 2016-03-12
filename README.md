@@ -19,6 +19,13 @@ Concepts
 
 The conceptual constructs of x2 are defined in [concepts.md](concepts.md).
 
+Most of the concepts of x2 came from quite old tradition: flows are similar to
+actors and events are exactly messages. There is nothing breaking new, but all
+the concepts are tweaked to form a easily distributable architecture.
+
+Fingerprint is just a trivial trick but it plays an important role in precise
+event dispatching (with event equivalence) and efficient wire formatting.
+
 Specifications
 --------------
 
@@ -26,6 +33,23 @@ The following documents provides the specifications that x2 ports should confirm
 
 * [definition.md](specs/definition.md) : x2 definition specifications
 * [binary-format.md](specs/binary-format.md) : x2 binary format specifications
+
+x2 binary format is focused to reduce the payload size. It supports backwards-
+compatibility if adding or removing properties happens only at the end of cells/
+events preserving the order of the rest.
+
+Though Behind
+-------------
+
+x2 is absolutely not the most efficient way to go in terms of runtime
+performance. It is built on the modern belief that human efficiency should gain
+more and more emphasis over machine efficiency.
+
+The core philosophy of x2 is that it forces nothing upon developers but an
+event-based architectural outline. That is why x2 is just a set of concepts and
+specifications, instead of being a single complete product. You can use freely
+any programming technique you want within your cases/flows. And you can even
+write your own links to integrate legacy services.
 
 Why x2
 ------
@@ -35,7 +59,8 @@ Why x2
 Set up a loosely-coupled event-driven architecture as your distributed
 application backbone. In addition to generating protocol code that emits
 efficient payload, it supports enhanced features such as cell/event inheritance
-hierarchy (enabling programming-by-difference) and precise event dispatching.
+hierarchy and precise event dispatching, which enables programming-by-difference
+and multi-property pattern matching respectively.
 
 ### Flexibility
 
@@ -56,8 +81,8 @@ Since x2 itself is not a concrete framework or library, we need its specific
 implementation in order to make use of it. A *port* is an actual implementation
 of x2, targeting a specific platform or language. A port is usually named in the
 form of x2[target], where target signifies its platform or language. Especially
-when a port is targeting a single programming language, it is normally named as
-x2[source file extension]: e.g., x2py, x2rb, etc.
+when a port is targeting a specific programming language, it is normally named
+as x2[source file extension]: e.g., x2py, x2rb, etc.
 
 Follows the currently available ports of x2.
 
