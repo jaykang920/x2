@@ -27,12 +27,12 @@ The following documents provides the specifications that x2 ports should confirm
 * [definition.md](specs/definition.md) : x2 definition specifications
 * [binary-format.md](specs/binary-format.md) : x2 binary format specifications
 
-Why x2?
--------
+Why x2
+------
 
 ### Productivity
 
-x2 provides a loosely-coupled event-driven architecture as your distributed
+Set up a loosely-coupled event-driven architecture as your distributed
 application backbone. In addition to generating protocol code that emits
 efficient payload, it supports enhanced features such as cell/event inheritance
 hierarchy (enabling programming-by-difference) and precise event dispatching.
@@ -46,8 +46,8 @@ can easily change the deployment of your application in either inter-process
 ### Testability
 
 If your cases/flows stick to the rule that events are the only way they
-communicate, then you can simply isolate a case/flow for functional test with
-a test case feeding the required events and investigating posted events.
+communicate, then you can simply isolate a single case/flow for functional test
+with a test case feeding the required events and investigating posted ones.
 
 Ports
 -----
