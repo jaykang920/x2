@@ -37,6 +37,15 @@ x2 binary format is focused to reduce the payload size. It supports
 backwards-compatibility if adding or removing properties happens only at the end
 of cells/events preserving the order of the rest.
 
+How Distribution Works
+----------------------
+
+Assume that two flows(cases) run independent logic, communicate only through
+events, and have no other coupling. Then you can either run them in a single
+process or split them into two separate processes distributed across a network.
+In any case, your application logic remains unchanged, while links handle the
+proper event transmission over the network.
+
 Thought Behind
 --------------
 
