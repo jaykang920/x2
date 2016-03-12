@@ -67,6 +67,10 @@ Defines a cell property.
 
 A property element may have a specified default value.
 
+The order of property element definitions matters. Once published a cell
+definition, you should not change the property definition order unless you give
+up the backwards-compatibility.
+
 ### event
 
 Defines an x2 event.
