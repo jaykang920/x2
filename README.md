@@ -53,7 +53,7 @@ x2 is not the most efficient way to go in terms of runtime performance. It is
 built on top of the modern belief that human efficiency should gain more and
 more emphasis over machine efficiency.
 
-The core philosophy of x2 is that it forces nothing upon developers but an
+The core virtue of x2 is that it forces nothing upon developers but an
 event-based architectural outline. That is why x2 is just a set of concepts and
 specifications, instead of being a single complete product. You can use freely
 any programming technique you want within your cases/flows. And you can even
