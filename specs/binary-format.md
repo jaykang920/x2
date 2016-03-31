@@ -50,7 +50,7 @@ Each built-in data types in x2 is encoded as follows.
 | float32  | Fixed big-endian 32 bits (IEEE 754 single-precision) |
 | float64  | Fixed big-endian 64 bits (IEEE 754 double-precision) |
 | string   | 32-bit integer length in unsigned LEB128, followed by UTF-8 encoded bytes |
-| datetime | Fixed 64-bit signed integer that represents the number of microseconds elapsed since Unix epoch (00:00:00.000 on 1 January 1970) |
+| datetime | Fixed 64-bit signed integer that represents the number of milliseconds elapsed since Unix epoch (00:00:00.000 on 1 January 1970) |
 | bytes    | 32-bit integer count in unsigned LEB128, followed by the sequence of raw bytes |
 | list(T)  | 32-bit integer count in unsigned LEB128, followed by the sequence of value type |
 
