@@ -20,7 +20,7 @@ The conceptual constructs of x2 are defined in [concepts.md](concepts.md).
 
 Most of the concepts of x2 came from quite old tradition: flows are similar to
 actors and events are exactly messages. There is nothing breaking new, but all
-the concepts are tweaked to form an easily distributable architecture.
+the concepts are tweaked to form an flexibly distributable architecture.
 
 Fingerprint is just a trivial trick but it plays an important role in precise
 event dispatching (with event equivalence) and efficient wire formatting.
