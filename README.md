@@ -96,8 +96,8 @@ named as x2[source file extension].
 
 Follows the currently available ports of x2.
 
-* [x2clr](https://github.com/jaykang920/x2clr) : CLR (.NET/Mono) port of x2,
-  written in C# (**reference port**)
+* [x2clr](https://github.com/jaykang920/x2clr) (**reference port**) : CLR (.NET/Mono) port of x2,
+  written in C#
 
 Under-developed early-stage ports:
 
