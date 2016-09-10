@@ -6,10 +6,12 @@ highly flexible cross-platform, cross-language distributed systems. Based on a
 few old simple yet powerful concepts, it encourages a unified loosely coupled
 event-driven approach throughout an application of any scale.
 
-Although x2 also specifies its own binary format and most ports come with their
-default protocol code generators, x2 is differentiated from dedicated protocol
-code generators (such as Google ProtoBuf or Apache Thrift) in that it provides a
-macroscopic model to flexibly organize your event-based distributed systems.
+Although x2 also specifies its own binary format and most
+[port](https://github.com/jaykang920/x2/blob/master/README.md#Ports)s
+come with their default protocol code generators, x2 is differentiated from
+dedicated protocol code generators (such as Google ProtoBuf or Apache Thrift)
+in that it provides a macroscopic model to flexibly organize your event-based
+distributed systems.
 
 *In a nutshell, x2 is all about how you organize your distributed application.*
 
