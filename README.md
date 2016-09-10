@@ -97,7 +97,8 @@ Follows the currently available ports of x2.
 * [x2clr](https://github.com/jaykang920/x2clr) : CLR (.NET/Mono) port of x2,
   written in C# (**reference port**)
 
-Early-stage ports under development:
+Under-developed early-stage ports:
 
 * [x2boost](https://github.com/jaykang920/x2boost) : C++ port of x2, based on C++98
 and [Boost](http://www.boost.org) libraries
+* [x2java](https://github.com/jaykang920/x2java) : Java 5 port of x2
