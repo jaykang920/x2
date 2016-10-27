@@ -72,7 +72,7 @@ efficient payload, it supports enhanced features such as cell/event inheritance
 hierarchy and precise event dispatching, which enables programming-by-difference
 and multi-property pattern matching respectively.
 
-### Flexibility
+### Flexibility and Reusability
 
 Once you carefully organized events and partitioned your application logic, you
 can easily change the deployment of your application in either inter-process
