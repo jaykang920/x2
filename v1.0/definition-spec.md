@@ -119,9 +119,8 @@ Definition Format
 -----------------
 
 Instead of introducing another IDL(Interface Definition Language), x2 adopts
-existing text formats for definitions. Though YAML is definitely less verbose,
-XML is our first choice since it is supported out-of-box in most modern
-languages.
+existing text formats for definitions. Though YAML is less verbose, our primary
+choice is XML since it is supported out-of-box in most modern languages.
 
 ### XML Definition Format
 
