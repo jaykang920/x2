@@ -1,14 +1,14 @@
-Concepts
-========
+x2 Concepts v1.0
+================
 
 An x2 port is required to implement all of the core concepts described below. In
-addition, it may include additional common concepts to help specific aspects of
-application development.
+addition, it may include more concepts to help specific aspects of application
+development.
 
 Core Concepts
 -------------
 
-#### Shared Knowledge
+### Shared Knowledge
 
 Distributed applications usually depend on certain knowledge shared among their
 participating peers. This kind of shared knowledge includes common data
@@ -20,8 +20,8 @@ part of the entire application.
 
 #### Constant
 
-Named constant values may be shared through x2 definitions. Usually x2 event
-type identifiers are defined as shared integer constants.
+Named *constant* values may be shared through x2 definitions. x2 event type
+identifiers are generally defined as shared integer constants.
 
 #### Cell
 
@@ -34,8 +34,8 @@ primitive or composite (another cell).
 
 ###### Hierarchical
 
-x2 cells may be organized in hierarchical structure, which is usually expressed
-as class inheritance hierarchy in object-oriented languages. You can extract
+x2 cells may be organized in a hierarchical structure, which is expressed as
+class inheritance hierarchy in object-oriented languages. You can extract
 properties repeated across many cells into a common parent cell and let the
 child cells extend it.
 
@@ -78,7 +78,7 @@ Flows need to be attached to the hub in order to be notified with application
 events. Each flow has its own event queue (if required) and execution context,
 but its implementation details are not regulated.
 
-Please note that a flow is not necessarily a thread. Though we usually use
+Please note that a flow is not necessarily a thread. Though we mostly use
 single-threaded flows to keep things simple, some flows may run multiple threads
 simultaneously. Some flows do not even have its own thread so that it can be
 embedded into existing applications.
@@ -89,9 +89,9 @@ A *hub* is an event distribution bus to which flows are attached. In most cases,
 an x2 process maintains only one single hub with it. Once an event is *posted*
 up to the hub, every attached flow is notified with it.
 
-While a flow usually performs precise dispatching, a hub performs blind
-distribution, meaning that a posted event is pushed into all the attached flows
-regardless of whether they subscribed for that specific event or not.
+While a flow performs precise dispatching, a hub performs blind distribution,
+meaning that a posted event is pushed into all the attached flows regardless of
+whether they subscribed for that specific event or not.
 
 #### Link
 

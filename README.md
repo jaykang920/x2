@@ -7,7 +7,7 @@ few old simple yet powerful concepts, it encourages a unified loosely coupled
 event-driven approach throughout an application of any scale.
 
 Although x2 also specifies its own binary format and most
-[port](#ports)s
+[ports](#ports)
 come with their default protocol code generators, x2 is differentiated from
 dedicated protocol code generators (such as Google ProtoBuf or Apache Thrift)
 in that it provides a macroscopic model to flexibly organize your event-based
@@ -18,7 +18,7 @@ distributed systems.
 Concepts
 --------
 
-The conceptual constructs of x2 are defined in [concepts.md](concepts.md).
+The conceptual constructs of x2 are defined in [concepts.md](draft/concepts.md).
 
 Most of the concepts of x2 came from quite old tradition: flows are similar to
 actors and events are exactly messages. There is nothing breaking new, but all
@@ -32,12 +32,12 @@ Specifications
 
 The following documents provides the specifications that x2 ports should confirm:
 
-* [definition.md](specs/definition.md) : x2 definition specifications
-* [binary-format.md](specs/binary-format.md) : x2 binary format specifications
+* [definition-spec.md](draft/definition-spec.md) : x2 definition specification
+* [wire-format-spec.md](draft/wire-format-spec.md) : x2 wire format specification
 
 x2 binary format is focused to reduce the payload size. It supports
-backwards-compatibility if adding or removing properties happens only at the end
-of cells/events preserving the order of the rest.
+backwards-compatibility if adding or removing properties happens only at the
+end of cells/events preserving the order of the rest.
 
 How Distribution Works
 ----------------------

@@ -1,12 +1,16 @@
-Binary Format Specification
-===========================
+x2 Wire Format Specification v1.0
+=================================
 
 Basic Encoding
 --------------
 
 ### Variable-Length Integer Encoding
 
-The variable-length encoding of 32/64-bit integer values relies on base-128 variants (unsigned LEB128), where each byte, except the last one, has the MSB (most significant bit) set indicating that there are further bytes to come. The lower 7 bits of each byte are used to store the two's complement representation of the number in groups of 7 bits, least significant group first.
+The variable-length encoding of 32/64-bit integer values relies on base-128
+variants (unsigned LEB128), where each byte, except the last one, has the MSB
+(most significant bit) set indicating that there are further bytes to come. The
+lower 7 bits of each byte are used to store the two's complement representation
+of the number in groups of 7 bits, least significant group first.
 
 | 32-bit Integer Range    | Encoded Bytes (LSG First)                    |
 |-------------------------|----------------------------------------------|
@@ -25,7 +29,8 @@ encoded with unsigned LEB128 along with the following manipulation:
 (n << 1) ^ (n >> 63)  // for 64 bits
 ```
 
-where the second shift (n >> 31/63) is an arithmetic shift so that the (n << 1) part is negated for negative numbers.
+where the second shift (n >> 31/63) is an arithmetic shift so that the (n << 1)
+part is negated for negative numbers.
 
 ### Fixed-Length Integer Encoding
 

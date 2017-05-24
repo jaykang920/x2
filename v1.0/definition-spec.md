@@ -1,5 +1,5 @@
-Definition Specification
-========================
+x2 Definition Specification v1.0
+================================
 
 Definition Unit
 ---------------
@@ -132,6 +132,10 @@ Follows a skeletal structure example of well-formed XML definition file.
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <x2 namespace="">
+  <references>
+    <ref target="">
+  </references>
+  <definitions>
     <consts name="" type="">
         <const name="">value</const>
         ...
@@ -146,5 +150,36 @@ Follows a skeletal structure example of well-formed XML definition file.
         <property name="" type="">default value</property>
         ...
     </event>
+  </definitions>
 </x2>
+```
+
+### YAML Definition Format
+
+Follows a skeletal structure example of YAML definition file.
+
+```yaml
+---
+namespace:
+references:
+- target:
+definitions:
+- class: consts
+  name:
+  type:
+  constants:
+  - { name: , value: }
+- class: cell
+  name:
+  base:
+  properties:
+  - { name: , type: }
+  - { name: , type: , default-value: }
+- class: event
+  name:
+  id:
+  base:
+  properties:
+  - { name: , type: }
+  - { name: , type: , default-value: }
 ```
