@@ -17,10 +17,34 @@ the global (unnamed or default) package of the target language.
 Each sub-path of the composite package path should be separated by a forward
 slash ('/') as a package path separator, regardless of the target language.
 
+Reference Elements
+------------------
+
+An x2 definition unit may contain one or more of the following reference
+elements.
+
+### namespace
+
+Specifies a namespace reference. Namespace references are used by the languages
+that require package reference (such as C# and Java).
+
+| Attribute         | Description                |
+|-------------------|----------------------------|
+| target (required) | Target source package path |
+
+### file
+
+Specifies a definition file reference. File references are used by the languages
+that require header file includes (such as C/C++).
+
+| Attribute         | Description                                 |
+|-------------------|---------------------------------------------|
+| target (required) | Relative path to the target definition unit |
+
 Definition Elements
 -------------------
 
-An x2 definition unit may have one or more of the following elements.
+An x2 definition unit may have one or more of the following definition elements.
 
 ### consts
 
@@ -132,22 +156,23 @@ Follows a skeletal structure example of well-formed XML definition file.
 <?xml version="1.0" encoding="utf-8"?>
 <x2 namespace="">
   <references>
-    <ref target="">
+    <namespace target=""/>
+    <file target=""/>
   </references>
   <definitions>
     <consts name="" type="">
-        <const name="">value</const>
-        ...
+      <const name="">value</const>
+      ...
     </consts>
     <cell name="" base="">
-        <property name="" type=""/>
-        <property name="" type="">default value</property>
-        ...
+      <property name="" type=""/>
+      <property name="" type="">default value</property>
+      ...
     </cell>
     <event name="" id="" base="">
-        <property name="" type=""/>
-        <property name="" type="">default value</property>
-        ...
+      <property name="" type=""/>
+      <property name="" type="">default value</property>
+      ...
     </event>
   </definitions>
 </x2>
@@ -161,24 +186,25 @@ Follows a skeletal structure example of YAML definition file.
 ---
 namespace:
 references:
-- target:
+  - { type: namespace, target: }
+  - { type: file, target: }
 definitions:
-- class: consts
-  name:
-  type:
-  constants:
-  - { name: , value: }
-- class: cell
-  name:
-  base:
-  properties:
-  - { name: , type: }
-  - { name: , type: , default-value: }
-- class: event
-  name:
-  id:
-  base:
-  properties:
-  - { name: , type: }
-  - { name: , type: , default-value: }
+  - { class: consts, name: , type: ,
+      elements: [
+        { name: , value: },
+        { name: , value: },
+      ]
+    }
+  - { class: cell, name: , base: ,
+      properties: [
+        { name: , type: },
+        { name: , type: , default: },
+      ]
+    }
+  - { class: event, name: , id: , base: ,
+      properties: [
+        { name: , type: },
+        { name: , type: , default: },
+      ]
+    }
 ```
