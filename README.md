@@ -18,7 +18,7 @@ distributed systems.
 Concepts
 --------
 
-The conceptual constructs of x2 are defined in [concepts.md](draft/concepts.md).
+The conceptual constructs of x2 are defined in [concepts.md](v1.0/concepts.md).
 
 Most of the concepts of x2 came from quite old tradition: flows are similar to
 actors and events are exactly messages. There is nothing breaking new, but all
@@ -32,8 +32,8 @@ Specifications
 
 The following documents provides the specifications that x2 ports should confirm:
 
-* [definition-spec.md](draft/definition-spec.md) : x2 definition specification
-* [wire-format-spec.md](draft/wire-format-spec.md) : x2 wire format specification
+* [definition-spec.md](v1.0/definition-spec.md) : x2 definition specification
+* [wire-format-spec.md](v1.0/wire-format-spec.md) : x2 wire format specification
 
 x2 binary format is focused to reduce the payload size. It supports
 backwards-compatibility if adding or removing properties happens only at the
@@ -96,10 +96,10 @@ named as x2[source file extension].
 
 Follows the currently available ports of x2.
 
-* [x2clr](https://github.com/jaykang920/x2clr) (**reference port**) : CLR (.NET/Mono) port of x2,
+* [x2net](https://github.com/jaykang920/x2net) (**reference port**) : Universal .NET port of x2,
   written in C#
 
-Under-developed early-stage ports:
+Under-developed early-stage ports (outdated):
 
 * [x2boost](https://github.com/jaykang920/x2boost) : C++ port of x2, based on C++98
 and [Boost](http://www.boost.org) libraries
