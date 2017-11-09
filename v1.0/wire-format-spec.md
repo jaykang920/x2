@@ -62,9 +62,9 @@ Each built-in data types in x2 is encoded as follows.
 ### Encoding User-Defined Types
 
 x2 cells and events maintain their own fingerprints to keep track of which
-property has been set explicitly.  And the fingerprints should precede their
-user-defined properties to determine which property is to be encoded/decoded. An
-x2 fingerprint is encoded as follows.
+property has been set explicitly. And the fingerprints should precede their
+user-defined properties to determine which property is to be encoded/decoded.
+An x2 fingerprint is encoded as follows.
 
 | Field  | Description                                                        |
 |--------|--------------------------------------------------------------------|
@@ -81,17 +81,12 @@ contained in an x2 event.
 | Fingerprint | Fingerprint encoded                                          |
 | Properties  | Ordered sequence of property values which are marked in the fingerprint |
 
-An x2 event is the only entity that can be transferred, saved, or retrieved with
-its type identifier, and it is encoded as follows.
+For cells and events, A null reference is expressed by a length value zero(0).
 
-| Field           | Description                                                |
-|-----------------|------------------------------------------------------------|
-| Length          | 32-bit integer event length in bytes, unsigned LEB128 encoded |
-| Type Identifier | Signed 32-bit integer event type identifier, ZigZag encoded |
-| Fingerprint     | Fingerprint encoded                                        |
-| Properties      | Ordered sequence of property values which are marked in the fingerprint |
+#### Partial Serialization
 
-For cells/events, A null reference is expressed by a length value zero(0).
+When an extended (derived) cell/event instance is serialized in place of a base
+(super) class, it should be serialized as if it were a base class instance.
 
 Link-Specific Format
 --------------------
@@ -100,10 +95,11 @@ Link-Specific Format
 
 In TCP socket links, an x2 event is transferred as follows.
 
-| Field  | Description                                             |
-|--------|---------------------------------------------------------|
-| Header | 32-bit unsigned integer header, unsigned LEB128 encoded |
-| Event  | Event encoded, except the preceding length              |
+| Field           | Description                                                |
+|-----------------|------------------------------------------------------------|
+| Header          | 32-bit unsigned integer header, unsigned LEB128 encoded    |
+| Type Identifier | Signed 32-bit integer event type identifier, ZigZag encoded |
+| Event           | Event encoded, except the preceding length                 |
 
 #### Header Integer format
 

@@ -96,11 +96,12 @@ named as x2[source file extension].
 
 Follows the currently available ports of x2.
 
-* [x2net](https://github.com/jaykang920/x2net) (**reference port**) : Universal .NET port of x2,
-  written in C#
+* [x2net](https://github.com/jaykang920/x2net) (**reference port**) : Universal
+  .NET port of x2, written in C#
 
 Under-developed early-stage ports:
 
 * [x2boost](https://github.com/jaykang920/x2boost) : C++ port of x2, based on C++98
 and [Boost](http://www.boost.org) libraries
 * [x2java](https://github.com/jaykang920/x2java) : Java 5 port of x2
+* [x2py](https://github.com/jaykang920/x2py) : Python 3 port of x2
