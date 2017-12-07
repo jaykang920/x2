@@ -33,6 +33,7 @@ Specifications
 The following documents provides the specifications that x2 ports should confirm:
 
 * [definition-spec.md](v1.0/definition-spec.md) : x2 definition specification
+* [implementation-spec.md](v1.0/implementation-spec.md) : x2 implementation-related specification
 * [wire-format-spec.md](v1.0/wire-format-spec.md) : x2 wire format specification
 
 x2 binary format is focused to reduce the payload size. It supports
