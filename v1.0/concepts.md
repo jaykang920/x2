@@ -119,6 +119,12 @@ re-engineering of threading architecture. In this idea, a flow is considered as
 a stack of relevant cases which are initialized and terminated along with their
 holding flow.
 
+#### Hub Case
+
+Hub cases are used to organize application global setup/teardown tasks. They are
+directly added to the hub and initialized/terminated along with the hub when it
+starts up and shuts down.
+
 #### Hub Channel
 
 In some complicated applications, a lot of flows may be attached to a single
