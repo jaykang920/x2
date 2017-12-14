@@ -43,15 +43,15 @@ end of cells/events preserving the order of the rest.
 How Distribution Works
 ----------------------
 ```
-        +---------+        +---------+            +---------+
-    +--------+    |    +--------+    |            |    +--------+
-    | Flow A |    |    | Flow A |    |            |    | Flow B |
-    +--------+    |    +--------+    |            |    +--------+
-        |   Hub   | ==     |   Hub   |            |   Hub   |
-    +--------+    |        |    +--------+    +--------+    |
-    | Flow B |    |        |    | Link 1 |----| Likn 2 |    |
-    +--------+    |        |    +--------+    +--------+    |
-        +---------+        +---------+            +---------+
+        +---------+           +---------+            +---------+
+    +--------+    |       +--------+    |            |    +--------+
+    | Flow A |    |       | Flow A |    |            |    | Flow B |
+    +--------+    |       +--------+    |            |    +--------+
+        |   Hub   |  <=>      |   Hub   |            |   Hub   |
+    +--------+    |           |    +--------+    +--------+    |
+    | Flow B |    |           |    | Link 1 |----| Likn 2 |    |
+    +--------+    |           |    +--------+    +--------+    |
+        +---------+           +---------+            +---------+
 ```
 Assume that two flows(cases) run independent logic, communicate only through
 events, and have no other coupling. Then you can either run them in a single
