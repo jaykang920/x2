@@ -87,7 +87,7 @@ Defines a cell property.
 |--------------------------|--------------------------------------------|
 | name (required)          | Name of the property                       |
 | type (required)          | Data type of the property                  |
-| default value (optional) | Default value of the property, if required | 
+| default value (optional) | Default value of the property, if required |
 
 A property element may have a specified default value.
 
@@ -134,16 +134,17 @@ types.
 
 ### Composite Data Types
 
-| Name    | Description                 | Default Value |
-|---------|-----------------------------|---------------|
-| bytes   | Fixed-length array of bytes | null          |
-| list(T) | An ordered list of values   | null          |
+| Name      | Description                      | Default Value |
+|-----------|----------------------------------|---------------|
+| bytes     | Fixed-length array of raw bytes  | null          |
+| list(T)   | Ordered list of values           | null          |
+| map(K, V) | Unordered map of key-value pairs | null          |
 
 Definition Format
 -----------------
 
 Instead of introducing another IDL(Interface Definition Language), x2 adopts
-existing text formats for definitions. Though YAML is less verbose, our primary
+existing text formats for definitions. Though YAML is less verbose, our first
 choice is XML since it is supported out-of-box in most modern languages.
 
 ### XML Definition Format

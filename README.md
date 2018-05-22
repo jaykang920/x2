@@ -6,19 +6,18 @@ highly flexible cross-platform, cross-language distributed systems. Based on a
 few old simple yet powerful concepts, it encourages a unified loosely coupled
 event-driven approach throughout an application of any scale.
 
-Although x2 also specifies its own binary format and most
-[ports](#ports)
-come with their default protocol code generators, x2 is differentiated from
-dedicated protocol code generators (such as Google ProtoBuf or Apache Thrift)
-in that it provides a macroscopic model to flexibly organize your event-based
-distributed systems.
+Although x2 also specifies its own binary format and most [ports](#ports) come
+with their default protocol code generators, x2 is differentiated from dedicated
+protocol code generators (such as Google ProtoBuf or Apache Thrift) in that it
+provides a macroscopic model to flexibly organize your event-based distributed
+systems.
 
 *In a nutshell, x2 is all about how you organize your distributed application.*
 
 Concepts
 --------
 
-The conceptual constructs of x2 are defined in [concepts.md](v1.0/concepts.md).
+The conceptual constructs of x2 are defined in [concepts.md](concepts.md).
 
 Most of the concepts of x2 came from quite old tradition: flows are similar to
 actors and events are exactly messages. There is nothing breaking new, but all
@@ -32,9 +31,9 @@ Specifications
 
 The following documents provides the specifications that x2 ports should confirm:
 
-* [definition-spec.md](v1.0/definition-spec.md) : x2 definition specification
-* [implementation-spec.md](v1.0/implementation-spec.md) : x2 implementation-related specification
-* [wire-format-spec.md](v1.0/wire-format-spec.md) : x2 wire format specification
+* [definition-spec.md](spec/definition-spec.md) : x2 definition specification
+* [implementation-spec.md](spec/implementation-spec.md) : x2 implementation-related specification
+* [wire-format-spec.md](spec/wire-format-spec.md) : x2 wire format specification
 
 x2 binary format is focused to reduce the payload size. It supports
 backwards-compatibility if adding or removing properties happens only at the
