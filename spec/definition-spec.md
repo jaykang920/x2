@@ -1,5 +1,5 @@
-x2 Definition Specification v1.0
-================================
+x2 Definition Specification
+===========================
 
 Definition Unit
 ---------------

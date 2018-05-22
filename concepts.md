@@ -1,5 +1,5 @@
-x2 Concepts v1.0
-================
+x2 Concepts
+===========
 
 An x2 port is required to implement all of the core concepts described below. In
 addition, it may include more concepts to help specific aspects of application

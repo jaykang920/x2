@@ -1,5 +1,5 @@
-x2 Implementation Specification v1.0
-====================================
+x2 Implementation Specification
+===============================
 
 Events
 ------

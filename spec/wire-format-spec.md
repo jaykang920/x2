@@ -1,5 +1,5 @@
-x2 Wire Format Specification v1.0
-=================================
+x2 Wire Format Specification
+============================
 
 Basic Encoding
 --------------
