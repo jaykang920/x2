@@ -1,18 +1,40 @@
 x2
 ==
 
-x2 is a set of concepts and specifications that facilitates the development of
+*x2* is a set of concepts and specifications that facilitates the development of
 highly flexible cross-platform, cross-language distributed systems. Based on a
 few old simple yet powerful concepts, it encourages a unified loosely coupled
 event-driven approach throughout an application of any scale.
 
-Although x2 also specifies its own binary format and most [ports](#ports) come
+Although x2 also specifies its own wire format and most [ports](#ports) come
 with their default protocol code generators, x2 is differentiated from dedicated
 protocol code generators (such as Google ProtoBuf or Apache Thrift) in that it
 provides a macroscopic model to flexibly organize your event-based distributed
 systems.
 
 *In a nutshell, x2 is all about how you organize your distributed application.*
+
+Ports
+-----
+
+Since x2 itself is not a concrete framework or library, we need its specific
+implementation in order to make use of it. A *port* is an actual implementation
+of x2, targeting a specific platform or language. A port is usually named in the
+form of x2[target], where target signifies its platform or language. Especially
+when a port is targeting a specific programming language, it would be normally
+named as x2[source file extension].
+
+Follows the currently available ports of x2.
+
+* [x2net](https://github.com/jaykang920/x2net) (**reference port**) : Universal
+  .NET port of x2, written in C#
+
+Under-developed early-stage ports:
+
+* [x2boost](https://github.com/jaykang920/x2boost) : C++ port of x2, based on C++98
+and [Boost](http://www.boost.org) libraries
+* [x2java](https://github.com/jaykang920/x2java) : Java 5 port of x2
+* [x2py](https://github.com/jaykang920/x2py) : Python port of x2
 
 Concepts
 --------
@@ -41,6 +63,7 @@ end of cells/events preserving the order of the rest.
 
 How Distribution Works
 ----------------------
+
 ```
         +---------+           +---------+            +---------+
     +--------+    |       +--------+    |            |    +--------+
@@ -93,25 +116,3 @@ can easily change the deployment of your application in either inter-process
 If your cases/flows stick to the rule that exchanging events are the only way
 they communicate, then you can simply isolate a single case/flow for functional
 test with a test case feeding the required events and investigating posted ones.
-
-Ports
------
-
-Since x2 itself is not a concrete framework or library, we need its specific
-implementation in order to make use of it. A *port* is an actual implementation
-of x2, targeting a specific platform or language. A port is usually named in the
-form of x2[target], where target signifies its platform or language. Especially
-when a port is targeting a specific programming language, it would be normally
-named as x2[source file extension].
-
-Follows the currently available ports of x2.
-
-* [x2net](https://github.com/jaykang920/x2net) (**reference port**) : Universal
-  .NET port of x2, written in C#
-
-Under-developed early-stage ports:
-
-* [x2py](https://github.com/jaykang920/x2py) : Python port of x2
-* [x2java](https://github.com/jaykang920/x2java) : Java 5 port of x2
-* [x2boost](https://github.com/jaykang920/x2boost) : C++ port of x2, based on C++98
-and [Boost](http://www.boost.org) libraries
